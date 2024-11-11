@@ -13,9 +13,11 @@
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@nuxthub/core": "^0.8.6",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "core-js": "^3.8.3",
+    "nuxt": "^3.14.159",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
