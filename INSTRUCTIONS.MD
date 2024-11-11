@@ -5,8 +5,8 @@ Deadline: Sunday, November 10th at 11:59 pm
 Tools: Nuxt.js, NuxtHub, Cloudflare Workers
 
 Case Study Overview
-We’ve provided access to an API endpoint with anonymized client trade and commission data at https://paradigmapi.pythonanywhere.com/. This exercise involves building a basic financial dashboard using Nuxt.js, deploying it to NuxtHub on Cloudflare Workers, and offering a process improvement idea based on the data.
-API Documentation: Explore endpoint details at https://paradigmapi.pythonanywhere.com/api/docs. Five endpoints are available for use in the dashboard.
+We’ve provided access to an API endpoint with anonymized client trade and commission data . This exercise involves building a basic financial dashboard using Nuxt.js, deploying it to NuxtHub on Cloudflare Workers, and offering a process improvement idea based on the data.
+API Documentation: Explore endpoint details. Five endpoints are available for use in the dashboard.
 
 Objectives
 Data Integration & Display: Develop a dashboard view connecting to the provided API and displaying trade or commission data.
@@ -31,7 +31,6 @@ Data Handling & UX: Ability to manage and present data clearly.
 Process Improvement: Relevance of your suggested optimization to Paradigm Capital’s operations.
 
 Submission
-By the deadline, email myamani@paradigmcap.com and smcauley@paradigmcap.com the following:
 GitHub Repository: Link to your codebase with setup and deployment documentation.
 NuxtHub Deployment Link: Link to your deployed app.
 Process Improvement: A brief description of your suggested optimization.
