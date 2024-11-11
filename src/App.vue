@@ -1,30 +1,66 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div id="app">
+    <nav class="navbar">
+      <div class="logo" @click="clearLocalStorage()">Paradigm Capital</div>
+      <ul class="nav-links">
+        <li v-if="$route.name === 'client'">
+          <router-link to="/" class="home_link">Home</router-link>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <router-view />
+    </main>
+  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+export default {
+  name: 'App',
+  methods: {
+    clearLocalStorage() {
+      localStorage.clear()
     }
   }
+}
+</script>
+
+<style scoped>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #456c9d;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.home_link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+.home_link:hover {
+  color: #f39c12;
 }
 </style>

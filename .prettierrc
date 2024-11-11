@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "prettier/prettier": "warn"
+    },
+    "tabWidth": 2,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "semi": false,
+    "trailingComma": "none",
+    "bracketSpacing": true
+}
